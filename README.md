@@ -177,6 +177,10 @@ Most importantly, I learned that creating a trusted reporting environment is abo
 
 ## Tools & Technologies
 
+The reporting environment combined ETL workflows, database operations, automated reporting, and governance-focused validation processes.
+
+The following tools and concepts were part of that workflow:
+
 <p align="left">
 <img src="https://img.shields.io/badge/Talend-ETL%20Workflows-orange?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/tMap-Transformations-blue?style=for-the-badge"/>
