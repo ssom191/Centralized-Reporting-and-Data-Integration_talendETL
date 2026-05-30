@@ -2,11 +2,11 @@
 
 ## Overview
 
-During my time as a Management Trainee - Business Analyst in the non banking financial services industry, I contributed to ETL workflows that supported the development and maintenance of a centralized reporting environment.
+During my time as a Management Trainee - Business Analyst in the non-banking financial services industry, I contributed to ETL workflows that supported the development and maintenance of a centralized reporting environment.
 
 This repository presents a conceptual case study inspired by that experience. While all examples, diagrams, and workflows have been anonymized and simplified, they reflect the practical challenges involved in integrating data from multiple business functions into a trusted reporting ecosystem.
 
-The initiative aimed to reduce reporting dependencies between departments, improve reporting consistency, and provide a centralized source of information that could support both operational reporting and executive decision-making.
+The initiative aimed to reduce reporting dependencies across departments, improve reporting consistency, and provide a centralized source of information to support both operational reporting and executive decision-making.
 
 ---
 
@@ -34,25 +34,9 @@ As reporting volumes increased, this created operational challenges:
 
 ---
 
-## The Reporting Challenge
-
-One of the most interesting challenges was that the same KPI could mean different things depending on the department using it.
-
-For example, portfolio quality metrics such as delinquency and non-performing assets (NPA) were often viewed through different operational lenses:
-
-* Risk teams focused on portfolio exposure and credit risk
-* Collections teams focused on recovery prioritization
-* Accounts teams focused on financial reporting requirements
-
-While all departments worked with the same underlying portfolio, reporting definitions, bucket classifications, and business rules could vary depending on the use case.
-
-As a result, significant effort was often required to reconcile reports and explain why similar metrics produced different figures.
-
----
-
 ## The Solution
 
-The long-term objective was to create a centralized reporting environment that could act as a trusted reporting foundation across business functions.
+The long-term objective was to create a centralized reporting environment that could serve as a trusted foundation for reporting across business functions.
 
 This involved:
 
@@ -66,9 +50,7 @@ This involved:
 
 ![Centralized Reporting Architecture](diagrams/01-centralized-reporting-architecture.png)
 
-The centralized reporting database became the integration point between operational data sources and downstream reporting tools.
-
-Data from multiple systems and reporting files flowed through ETL workflows before being consolidated into a centralized reporting environment that supported dashboards, management reporting, and departmental analysis.
+The centralized database acted as the integration layer between operational systems and reporting outputs, supporting both Power BI dashboards and automated Excel-based reporting.
 
 ---
 
@@ -78,8 +60,7 @@ Data from multiple systems and reporting files flowed through ETL workflows befo
 
 ![ETL Workflow](diagrams/02-etl-workflow.png)
 
-Talend Open Studio was used to support ETL workflows and reporting automation.
-
+Talend Open Studio was used to support data integration workflows between files, databases, and reporting environments.
 Common integration scenarios included:
 
 ### Excel → Excel
@@ -100,7 +81,7 @@ Key concepts I worked with included:
 * Schema management
 * tMap transformations
 * File and database integrations
-* Job execution and monitoring
+* Job execution, scheduling and monitoring
 * Reporting data validation
 
 ---
@@ -111,11 +92,11 @@ Key concepts I worked with included:
 
 ![KPI Governance](diagrams/03-kpi-governance.png)
 
-A key lesson from the initiative was that reporting consistency requires more than technical integration.
+One challenge encountered during reporting integration was that the same KPI could be interpreted differently across business functions.
 
-Even when departments use the same data, different business objectives can lead to different interpretations of the same metric.
+For example, metrics related to portfolio quality and delinquency could be viewed differently by Risk, Collections, and Accounts teams because each function focuses on different operational objectives.
 
-Where possible, reporting definitions were reviewed, reconciled, standardized, or clearly documented to improve reporting transparency and reduce ambiguity.
+As reporting became more centralized, KPI definitions, data sources, bucket classifications, and business rules were reviewed and documented to improve transparency and reduce ambiguity in reporting outputs.
 
 This experience highlighted the importance of:
 
@@ -147,7 +128,7 @@ When failures occurred, ETL logs and validation checks were used to investigate 
 
 ![Reporting Automation](diagrams/04-reporting-automation.png)
 
-Once data was integrated into the centralized reporting database, reporting outputs could be refreshed automatically through scheduled processes.
+Once the data was integrated into the centralized reporting database, reporting outputs could be refreshed automatically through scheduled processes.
 
 This supported:
 
@@ -155,7 +136,6 @@ This supported:
 * Automated Excel report refreshes
 * Faster access to operational information
 * Reduced manual reporting effort
-* Improved consistency across departments
 
 Rather than recreating reports manually, teams could focus more on analysis and decision-making.
 
@@ -163,7 +143,7 @@ Rather than recreating reports manually, teams could focus more on analysis and 
 
 ## My Contribution
 
-This initiative was led by senior members of the Business Intelligence team.
+Senior members of the Business Intelligence team led this initiative.
 
 My role focused on supporting and maintaining ETL workflows that contributed to the centralized reporting environment.
 
@@ -177,7 +157,7 @@ Responsibilities included:
 * Validating reporting outputs
 * Supporting automated report refresh processes
 
-While I was not responsible for the overall architecture design, this experience provided practical exposure to enterprise reporting operations, ETL workflows, data quality controls, and reporting governance challenges.
+While I was not responsible for the overall architecture design, this experience provided practical exposure to enterprise reporting operations, ETL workflows, data quality controls, reporting governance challenges, and cross-functional reporting requirements.
 
 ---
 
@@ -186,13 +166,14 @@ While I was not responsible for the overall architecture design, this experience
 Contributing to centralized reporting initiatives reinforced several important data management principles:
 
 * Reporting challenges are often business challenges before they become technical challenges.
-* Multiple versions of the same metric reduce trust in reporting.
-* Data governance is as important as data integration.
-* Metadata-driven development improves maintainability and consistency.
 * Automated reporting reduces operational dependencies and reconciliation effort.
 * Centralized reporting environments improve cross-functional visibility and decision-making.
+* Consistent KPI definitions are essential for trusted reporting.
+* Metadata-driven development improves maintainability and consistency.
+* Data integration and data governance must evolve together.
 
-Most importantly, I learned that creating a trusted reporting environment is not simply about moving data between systems—it is about ensuring that people across the organization are working from a common understanding of the business.
+
+Most importantly, I learned that creating a trusted reporting environment is about ensuring that people across the organization can make decisions using consistent, reliable information, and not simply about moving data between systems.
 
 ---
 
@@ -215,7 +196,7 @@ Most importantly, I learned that creating a trusted reporting environment is not
 | Validation       | Schema checks, data quality investigations, error logging           |
 | Reporting        | Automated Excel reports and Power BI dashboards                     |
 | Database         | SQL querying, validation, troubleshooting                           |
-| Governance       | KPI standardization, reporting consistency, business rule alignment |
+| Governance       | KPI standardization, reporting consistency, business rule documentation |
 
 ---
 
