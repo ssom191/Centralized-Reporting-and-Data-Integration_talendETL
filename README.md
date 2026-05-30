@@ -16,7 +16,7 @@ Like many growing organizations, reporting information was generated across mult
 
 Examples included:
 
-* Loan reconciliation files maintained by Accounts department
+* Loan reconciliation files maintained by the Accounts department
 * Sales and disbursement reports maintained by Business departments
 * Collections and recovery reports
 * Risk and portfolio monitoring reports
@@ -81,7 +81,7 @@ Key concepts I worked with included:
 * Schema management
 * tMap transformations
 * File and database integrations
-* Job execution, scheduling and monitoring
+* Job execution, scheduling, and monitoring
 * Reporting data validation
 
 ---
@@ -90,11 +90,9 @@ Key concepts I worked with included:
 
 ### KPI Governance
 
-![KPI Governance](diagrams/03-kpi-governance.png)
-
 One challenge encountered during reporting integration was that the same KPI could be interpreted differently across business functions.
 
-For example, metrics related to portfolio quality and delinquency could be viewed differently by Risk, Collections, and Accounts teams because each function focuses on different operational objectives.
+For example, metrics related to portfolio quality and delinquency could be viewed differently by the Risk, Collections, and Accounts teams because each function focuses on different operational objectives.
 
 As reporting became more centralized, KPI definitions, data sources, bucket classifications, and business rules were reviewed and documented to improve transparency and reduce ambiguity in reporting outputs.
 
@@ -126,7 +124,7 @@ When failures occurred, ETL logs and validation checks were used to investigate 
 
 ### Automated Reporting Lifecycle
 
-![Reporting Automation](diagrams/04-reporting-automation.png)
+![Reporting Automation](diagrams/03-reporting-automation.png)
 
 Once the data was integrated into the centralized reporting database, reporting outputs could be refreshed automatically through scheduled processes.
 
